@@ -1,0 +1,52 @@
+Reset unwanted spacing
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Navbar style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8); /* semi-transparent black */
+  padding: 12px 30px; /* reduce height */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(6px); /* blur effect */
+}
+
+.logo {
+  color: orange;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: orange;
+}
